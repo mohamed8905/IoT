@@ -5,7 +5,7 @@
 #define LDR 14
 #define buzz 12
 #define butt 27
-#define Ser 2
+#define Ser 18
 #define IR 5
 
 int threshold = 2000;
@@ -44,12 +44,14 @@ void loop() {
   if (cbutt) {butt_st = !butt_st; delay(150);}
   
   if (!butt_st) {
+    lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Manual Override Activated");
     servo.write(0);
   }
   else if (!ir_d) {
     digitalWrite(buzz, HIGH);
+    lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Alert:");
     lcd.setCursor(0, 1);
@@ -60,6 +62,7 @@ void loop() {
   else if (light < threshold) {
     digitalWrite(LED, HIGH);
     servo.write(180);
+    lcd.clear();
     lcd.setCursor(0, 0);
     lcd.print("Night Mode:");
     lcd.setCursor(0, 1);
