@@ -47,6 +47,13 @@ This repository contains my work, code samples, and experiments from the summer 
 
 ---
 
+## 🚀 Deployment
+
+Check out the live project here:  
+[smart-29.vercel.app](https://smart-29.vercel.app/)
+
+---
+
 ## 📁 Google Drive Resources
 
 [Google Drive - Project Resources](https://drive.google.com/drive/folders/1QTzqgzbmLj6gUIJbOJn7f0KUEvHrncwx)
